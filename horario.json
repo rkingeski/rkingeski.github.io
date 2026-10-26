@@ -1,0 +1,19 @@
+[
+ {"dia":1,"ini":"08:20","fim":"10:10","tipo":"aula","sigla":"SID","nome":"Sistemas Digitais, turma B","sala":"F203"},
+ {"dia":1,"ini":"10:10","fim":"12:50","tipo":"extensao","sigla":"Colmeia","nome":"Extensão Colmeia","sala":""},
+ {"dia":1,"ini":"13:30","fim":"15:10","tipo":"aula","sigla":"PFN","nome":"Programação Funcional","sala":"F302"},
+ {"dia":1,"ini":"15:20","fim":"16:10","tipo":"atendimento","sigla":"Atendimento","nome":"Atendimento ao aluno","sala":""},
+ {"dia":1,"ini":"16:10","fim":"17:40","tipo":"pesquisa","sigla":"Pesquisa","nome":"Pesquisa","sala":"F08"},
+ {"dia":2,"ini":"10:10","fim":"11:50","tipo":"aula","sigla":"ACT","nome":"Automação e Controle","sala":"F212"},
+ {"dia":2,"ini":"13:30","fim":"15:10","tipo":"aula","sigla":"PFN","nome":"Programação Funcional","sala":"F205"},
+ {"dia":2,"ini":"15:20","fim":"17:00","tipo":"aula","sigla":"AOC","nome":"Arquitetura e Organização de Computadores","sala":"F204"},
+ {"dia":2,"ini":"17:00","fim":"17:40","tipo":"atendimento","sigla":"Atendimento","nome":"Atendimento ao aluno","sala":""},
+ {"dia":3,"ini":"10:10","fim":"11:50","tipo":"aula","sigla":"SID","nome":"Sistemas Digitais, turma B","sala":"F204"},
+ {"dia":3,"ini":"13:30","fim":"15:10","tipo":"aula","sigla":"PFN","nome":"Programação Funcional","sala":"F302"},
+ {"dia":3,"ini":"15:20","fim":"17:40","tipo":"pesquisa","sigla":"Pesquisa","nome":"Pesquisa","sala":"F08"},
+ {"dia":4,"ini":"10:10","fim":"11:50","tipo":"aula","sigla":"ACT","nome":"Automação e Controle","sala":"F212"},
+ {"dia":4,"ini":"13:30","fim":"15:10","tipo":"aula","sigla":"PFN","nome":"Programação Funcional","sala":"F205"},
+ {"dia":4,"ini":"15:20","fim":"17:00","tipo":"aula","sigla":"AOC","nome":"Arquitetura e Organização de Computadores","sala":"F204"},
+ {"dia":4,"ini":"17:00","fim":"17:40","tipo":"atendimento","sigla":"Atendimento","nome":"Atendimento ao aluno","sala":""},
+ {"dia":5,"ini":"13:30","fim":"17:40","tipo":"pesquisa","sigla":"Pesquisa","nome":"Pesquisa","sala":"F08"}
+]

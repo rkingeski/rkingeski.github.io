@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rafael Kingeski · Ciência da Computação · UDESC</title>
+  <meta name="description" content="Página do professor Rafael Kingeski, Departamento de Ciência da Computação da UDESC: disciplinas, horário, atendimento, pesquisa e publicações.">
+  <meta name="theme-color" content="#0d1014">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css?v=6">
+</head>
+<body>
+  <div class="pagina">
+
+    <!-- ===================== barra lateral ===================== -->
+    <aside class="lateral" aria-label="Perfil, disciplinas e contato">
+      <div class="perfil">
+        <img class="foto" src="assets/retrato.jpg" width="600" height="600" alt="Retrato de Rafael Kingeski">
+        <div>
+          <h1>Rafael Kingeski</h1>
+          <p class="cargo">Professor · Ciência da Computação</p>
+        </div>
+      </div>
+
+      <!-- tela de osciloscópio: o traço é uma senoide amortecida desenhada em SVG -->
+      <div class="osc" aria-hidden="true">
+        <svg viewBox="0 0 240 72" preserveAspectRatio="none">
+          <g class="osc-grade">
+            <path d="M0 18H240M0 36H240M0 54H240M30 0V72M60 0V72M90 0V72M120 0V72M150 0V72M180 0V72M210 0V72"/>
+          </g>
+          <path class="osc-traco" d="{{TRACO}}"/>
+        </svg>
+        <span class="osc-rotulo">CH1 200 mV/div · 5 ms/div</span>
+      </div>
+
+      <div class="lateral-mais" id="lateral-mais">
+        <ul class="contatos">
+          <li><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z M12 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg></span><div><small>Local</small><span>UDESC · CCT, Joinville (SC)</span></div></li>
+        </ul>
+
+        <section class="bloco" aria-labelledby="disc-t">
+          <h2 id="disc-t">Disciplinas 2026/2</h2>
+          <!-- Para cada disciplina, acrescente links dentro de <ul class="disc-links">. -->
+          <ul class="disciplinas">
+            <li>
+              <p class="disc-cab"><span class="sigla">AOC</span><span class="disc-nome">Arquitetura e Organização de Computadores</span></p>
+              <p class="disc-quando">ter e qui 15:20 · F204</p>
+              <ul class="disc-links">
+                <li><a href="https://rkingeski.github.io/simulador-mips32/">Simulador MIPS32</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="disc-cab"><span class="sigla">SID</span><span class="disc-nome">Sistemas Digitais, turma B</span></p>
+              <p class="disc-quando">seg 08:20 · F203 &nbsp; qua 10:10 · F204</p>
+              <ul class="disc-links"></ul>
+            </li>
+            <li>
+              <p class="disc-cab"><span class="sigla">PFN</span><span class="disc-nome">Programação Funcional</span></p>
+              <p class="disc-quando">seg a qui 13:30 · F302 (seg, qua) · F205 (ter, qui)</p>
+              <ul class="disc-links"></ul>
+            </li>
+            <li>
+              <p class="disc-cab"><span class="sigla">ACT</span><span class="disc-nome">Automação e Controle</span></p>
+              <p class="disc-quando">ter e qui 10:10 · F212</p>
+              <ul class="disc-links"></ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="bloco" aria-labelledby="atend-t">
+          <h2 id="atend-t">Atendimento ao aluno</h2>
+          <ul class="atendimento">
+            <li><span>Segunda</span><span>15:20–16:10</span></li>
+            <li><span>Terça</span><span>17:00–17:40</span></li>
+            <li><span>Quinta</span><span>17:00–17:40</span></li>
+          </ul>
+        </section>
+
+        <section class="bloco colmeia" aria-labelledby="colmeia-t">
+          <img src="assets/colmeia.png" width="209" height="240" alt="Símbolo do Colmeia">
+          <div>
+            <h2 id="colmeia-t">Colmeia</h2>
+            <p>Grupo de extensão em software e hardware livre do CCT, do qual participo.</p>
+            <a href="https://colmeia.joinville.udesc.br">colmeia.joinville.udesc.br</a>
+          </div>
+        </section>
+
+        <ul class="perfis">
+          <li><a href="http://lattes.cnpq.br/1703224157108700">Lattes</a></li>
+          <li><a href="https://orcid.org/0000-0002-1324-0826">ORCID</a></li>
+          <li><a href="https://scholar.google.com.br/citations?user=Pb0vdBcAAAAJ&amp;hl=pt-BR">Scholar</a></li>
+          <li><a href="https://github.com/rkingeski">GitHub</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ===================== conteúdo ===================== -->
+    <main class="conteudo">
+      <nav class="abas" aria-label="Seções">
+        <a href="#inicio" data-aba="inicio">Início</a>
+        <a href="#horario" data-aba="horario">Horário</a>
+        <a href="#pesquisa" data-aba="pesquisa">Pesquisa</a>
+        <a href="#publicacoes" data-aba="publicacoes">Publicações</a>
+        <a href="#feed" data-aba="feed">Feed</a>
+      </nav>
+
+      <article class="painel" id="inicio" data-painel="inicio">
+        <h2 class="titulo">Início</h2>
+        <p class="agora" id="agora" aria-live="polite">Veja na aba Horário quando estou em aula, em atendimento ou em pesquisa.</p>
+
+        <h3 class="subtitulo">Interesses</h3>
+        <ul class="interesses">
+          <li><span class="ico-sinal"><svg viewBox="0 0 40 24"><path d="M2 12h6l3-9 4 18 4-14 3 8 3-3h13"/></svg></span><div><strong>Processamento digital de sinais</strong><p>Filtros, análise espectral e descritores de sinais de voz.</p></div></li>
+          <li><span class="ico-sinal"><svg viewBox="0 0 40 24"><circle cx="8" cy="6" r="2.5"/><circle cx="8" cy="18" r="2.5"/><circle cx="20" cy="12" r="2.5"/><circle cx="32" cy="6" r="2.5"/><circle cx="32" cy="18" r="2.5"/><path d="M10 7l8 4M10 17l8-4M22 11l8-4M22 13l8 4"/></svg></span><div><strong>Aprendizado de máquina</strong><p>Classificação, seleção de atributos e redução de dimensionalidade.</p></div></li>
+          <li><span class="ico-sinal"><svg viewBox="0 0 40 24"><path d="M4 12h2M9 8v8M14 4v16M19 7v10M24 2v20M29 8v8M34 10v4"/></svg></span><div><strong>Emoções na voz</strong><p>Reconhecer emoções a partir do tom, do ritmo e do timbre da fala.</p></div></li>
+          <li><span class="ico-sinal"><svg viewBox="0 0 40 24"><path d="M6 4h28v16H6z M12 20v2h16v-2 M11 9h6M11 13h10M24 9h5"/></svg></span><div><strong>Arquitetura de computadores</strong><p>Datapath, pipeline e ferramentas para ensinar o funcionamento do processador.</p></div></li>
+        </ul>
+      </article>
+
+      <article class="painel" id="horario" data-painel="horario">
+        <h2 class="titulo">Horário 2026/2</h2>
+        <p class="nota">Horário de Brasília. A célula destacada é o que está acontecendo agora.</p>
+        <div class="tabela-rolagem">
+          {{TABELA}}
+        </div>
+        <ul class="legenda">
+          <li><i class="aula"></i>Aula</li>
+          <li><i class="atendimento"></i>Atendimento ao aluno</li>
+          <li><i class="pesquisa"></i>Pesquisa (sala F08)</li>
+          <li><i class="extensao"></i>Extensão (Colmeia)</li>
+        </ul>
+      </article>
+
+      <article class="painel" id="pesquisa" data-painel="pesquisa">
+        <h2 class="titulo">Pesquisa</h2>
+        <div class="pesq">
+          <div>
+            <p>Minha pesquisa concentra-se no reconhecimento automático de emoções em sinais de voz, com ênfase em duas etapas do processamento: os algoritmos de extração de parâmetros acústicos (descritores prosódicos, espectrais e cepstrais) e os métodos de seleção de características, que identificam, entre centenas de atributos, o subconjunto mais informativo para a classificação. O objetivo é obter modelos com bom desempenho e baixo custo computacional, adequados a aplicações em tempo real.</p>
+            <h3 class="subtitulo">Projeto atual</h3>
+            <p class="projeto"><strong>Reconhecimento de emoções por voz com seleção otimizada de descritores acústicos</strong><span>UDESC · desde 2024 · coordenação de André Tavares da Silva</span></p>
+          </div>
+          <figure class="fig-pesq">
+            {{FIGURA}}
+            <figcaption>Da voz à emoção: o sinal vira espectrograma, dele saem os descritores, e só os que importam seguem para o classificador. Valores ilustrativos.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="painel" id="publicacoes" data-painel="publicacoes">
+        <h2 class="titulo">Publicações</h2>
+        <p class="nota">Seleção. A lista completa está no <a href="http://lattes.cnpq.br/1703224157108700">Lattes</a> e no <a href="https://scholar.google.com.br/citations?user=Pb0vdBcAAAAJ&amp;hl=pt-BR">Google Scholar</a>.</p>
+        <ol class="pubs">
+          <li><span class="ano">2025</span><p>Nogueira, A. F. L.; <b>Kingeski, R.</b> A short review on the modern teaching of electrical machines using MATLAB and finite elements. <i>Journal of Electromagnetic Analysis and Applications</i>, v. 17, p. 57–78.</p></li>
+          <li><span class="ano">2024</span><p><b>Kingeski, R.</b>; Henning, E.; Paterno, A. S. Fusion of PCA and ICA in statistical subset analysis for speech emotion recognition. <i>Sensors</i>, v. 24, p. 5704.</p></li>
+          <li><span class="ano">2024</span><p>Busarello Wolff, J. G.; <b>Kingeski, R.</b>; Santos, W. P.; Cristani, J.; Traverso, S. D.; Paterno, A. S. Multifrequency electrical impedance tomography images for swine pneumonia detection using conductivity differences. <i>Electronics</i>, v. 13, p. 1463.</p></li>
+          <li><span class="ano">2022</span><p><b>Kingeski, R.</b>; Paterno, A. S.; Schueda, L. A. Feature analysis for speech emotion classification. Capítulo de livro, Springer Cham, p. 2359–2365.</p></li>
+          <li><span class="ano">2018</span><p><b>Kingeski, R.</b>; Schueda, L. A.; Paterno, A. S. Reconhecimento de emoções por voz para auxílio ao diagnóstico de transtornos mentais. XXVI Congresso Brasileiro de Engenharia Biomédica, Búzios.</p></li>
+        </ol>
+      </article>
+
+      <article class="painel" id="feed" data-painel="feed">
+        <h2 class="titulo">Feed</h2>
+        <!-- Lista gerada pelo build.py a partir de posts/*.md -->
+        {{FEED}}
+      </article>
+
+      <footer class="rodape">
+        <p>{{CREDITOS}}</p>
+      </footer>
+    </main>
+  </div>
+  <script src="pagina.js?v=5" defer></script>
+</body>
+</html>

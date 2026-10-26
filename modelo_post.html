@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{TITULO}} · Rafael Kingeski</title>
+  <meta name="description" content="{{RESUMO}}">
+  <meta name="theme-color" content="#0d1014">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilo.css?v=6">
+</head>
+<body>
+  <!-- Página de um post do feed, gerada pelo build.py a partir de posts/*.md -->
+  <div class="post-pagina">
+    <nav class="post-volta"><a href="../index.html#feed">← Rafael Kingeski · Feed</a></nav>
+    <article class="post">
+      <p class="post-data"><time datetime="{{DATA_ISO}}">{{DATA}}</time></p>
+      <h1 class="titulo">{{TITULO}}</h1>
+      <div class="prosa">
+{{CONTEUDO}}
+      </div>
+    </article>
+    <footer class="rodape">
+      <p>© 2026 Rafael Kingeski · <a href="../index.html#feed">outros posts</a></p>
+    </footer>
+  </div>
+</body>
+</html>

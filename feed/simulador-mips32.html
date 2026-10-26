@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Um simulador do MIPS32 para a aula de AOC · Rafael Kingeski</title>
+  <meta name="description" content="Uma ferramenta web para acompanhar, instrução por instrução, o caminho dos dados no processador monociclo e no pipeline.">
+  <meta name="theme-color" content="#0d1014">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilo.css?v=6">
+</head>
+<body>
+  <!-- Página de um post do feed, gerada pelo build.py a partir de posts/*.md -->
+  <div class="post-pagina">
+    <nav class="post-volta"><a href="../index.html#feed">← Rafael Kingeski · Feed</a></nav>
+    <article class="post">
+      <p class="post-data"><time datetime="2026-10-26">26 de outubro de 2026</time></p>
+      <h1 class="titulo">Um simulador do MIPS32 para a aula de AOC</h1>
+      <div class="prosa">
+<p>Na disciplina de Arquitetura e Organização de Computadores, o datapath do MIPS
+costuma aparecer como uma figura estática no slide. Para que a turma possa ver
+os dados percorrerem o processador, montei um
+<a href="https://rkingeski.github.io/simulador-mips32/">simulador didático do MIPS32</a>
+que roda direto no navegador.</p>
+<h2>O que dá para fazer</h2>
+<ul>
+<li>escrever um programa em assembly e executá-lo passo a passo;</li>
+<li>ver quais blocos e sinais de controle cada instrução ativa;</li>
+<li>comparar a versão monociclo com o pipeline de cinco estágios;</li>
+<li>observar <em>hazards</em> de dados e de controle, com e sem <em>forwarding</em>.</li>
+</ul>
+<p>O código está no <a href="https://github.com/rkingeski/simulador-mips32">GitHub</a>.</p>
+      </div>
+    </article>
+    <footer class="rodape">
+      <p>© 2026 Rafael Kingeski · <a href="../index.html#feed">outros posts</a></p>
+    </footer>
+  </div>
+</body>
+</html>
